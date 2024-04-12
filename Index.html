@@ -1,89 +1,89 @@
- public static void main(String[] args) {
+<br>public class Calculo_M_P2 {<br>
+    
+   <br> public static void main(String[] args) { <br>
         
        
-          int Area;
+          <br> int Area; <br>
        
-        int Perimetro;
-        double Peri2, Peri1, Peri3;
-        double PeriTOT;
-        int X1 ;
-        int Y1 ;
-         int X2 ;
-        int Y2 ;
-         int X3;
-        int Y3 ;
-        int Res ;
+       <br>  int Perimetro; <br>
+      <br>  double Peri2, Peri1, Peri3; <br>
+     <br>    double PeriTOT; <br>
+    <br>     int X1 ; <br>
+      <br>   int Y1 ; <br>
+       <br>   int X2 ; <br>
+      <br>   int Y2 ; <br>
+       <br>   int X3; <br>
+    <br>     int Y3 ; <br>
+    <br>     int Res ; <br>
       
         
-        do{
-        JOptionPane.showMessageDialog(null, "VIvenido al programa");
+      <br>   do{ <br>
+        <br> JOptionPane.showMessageDialog(null, "VIvenido al programa"); <br>
         
-        X1 = Integer.parseInt(JOptionPane.showInputDialog("Indique el valor de x1"));
-         Y1 = Integer.parseInt(JOptionPane.showInputDialog("Indique el valor de y1"));
-          X2 = Integer.parseInt(JOptionPane.showInputDialog("Indique el valor de x2"));
-           Y2 = Integer.parseInt(JOptionPane.showInputDialog("Indique el valor de y2"));
-           X3 = Integer.parseInt(JOptionPane.showInputDialog("Indique el valor de x3"));
-           Y3 = Integer.parseInt(JOptionPane.showInputDialog("Indique el valor de y3"));
+       <br>  X1 = Integer.parseInt(JOptionPane.showInputDialog("Indique el valor de x1")); <br>
+        <br>  Y1 = Integer.parseInt(JOptionPane.showInputDialog("Indique el valor de y1")); <br>
+           <br>X2 = Integer.parseInt(JOptionPane.showInputDialog("Indique el valor de x2")); <br>
+            <br>Y2 = Integer.parseInt(JOptionPane.showInputDialog("Indique el valor de y2")); <br>
+            <br>X3 = Integer.parseInt(JOptionPane.showInputDialog("Indique el valor de x3")); <br>
+            <br>Y3 = Integer.parseInt(JOptionPane.showInputDialog("Indique el valor de y3")); <br>
            
-           Perimetro = (int) ((int) Math.pow(X2 - X1,2) +  Math.pow(Y2 - Y1,2));
-           Peri1 = Math.sqrt(Perimetro);
-           JOptionPane.showMessageDialog(null, " La distancia entre el punto A Y el punto B es de " + Peri1);
-            Perimetro = (int) ((int) Math.pow(X3 - X1,2) +  Math.pow(Y3 - Y1,2));
-           Peri2 = Math.sqrt(Perimetro);
-           JOptionPane.showMessageDialog(null, " La distancia entre el punto A Y el punto C es de " + Peri2);
-           Perimetro = (int) ((int) Math.pow(X2 - X3,2) +  Math.pow(Y2 - Y3,2));
-           Peri3 = Math.sqrt(Perimetro);
-           JOptionPane.showMessageDialog(null, " La distancia entre el punto B Y el punto C es de " + Peri3);
-           PeriTOT = Peri1 + Peri2 + Peri3 ;
-           JOptionPane.showMessageDialog(null, "El perimetro de la figura es "+PeriTOT);
+          <br>  Perimetro = (int) ((int) Math.pow(X2 - X1,2) +  Math.pow(Y2 - Y1,2)); <br>
+          <br>  Peri1 = Math.sqrt(Perimetro); <br>
+         <br>   JOptionPane.showMessageDialog(null, " La distancia entre el punto A Y el punto B es de " + Peri1); <br>
+         <br>    Perimetro = (int) ((int) Math.pow(X3 - X1,2) +  Math.pow(Y3 - Y1,2)); <br>
+         <br>   Peri2 = Math.sqrt(Perimetro); <br>
+         <br>   JOptionPane.showMessageDialog(null, " La distancia entre el punto A Y el punto C es de " + Peri2); <br>
+         <br>   Perimetro = (int) ((int) Math.pow(X2 - X3,2) +  Math.pow(Y2 - Y3,2)); <br>
+        <br>    Peri3 = Math.sqrt(Perimetro); <br>
+         <br>   JOptionPane.showMessageDialog(null, " La distancia entre el punto B Y el punto C es de " + Peri3); <br>
+        <br>    PeriTOT = Peri1 + Peri2 + Peri3 ; <br>
+        <br>    JOptionPane.showMessageDialog(null, "El perimetro de la figura es "+PeriTOT); <br>
            
-           Area = Math.abs(X1 * (Y2 - Y3) + X2 * (Y3 - Y1) + X3 * (Y1 - Y2));
-           JOptionPane.showMessageDialog(null, "El area total del triangulo es\t" + Area );
+         <br>   Area = Math.abs(X1 * (Y2 - Y3) + X2 * (Y3 - Y1) + X3 * (Y1 - Y2)); <br>
+         <br>   JOptionPane.showMessageDialog(null, "El area total del triangulo es\t" + Area ); <br>
            
-           
-           
-           if (Peri1==Peri2&Peri2==Peri3){ //Equilatero
+            
+        <br>  if (Peri1==Peri2&Peri2==Peri3){ //Equilatero <br>
              
-              JOptionPane.showMessageDialog(null, "El triangulo es un Equilatero");
+             <br>  JOptionPane.showMessageDialog(null, "El triangulo es un Equilatero"); <br>
 
               
              
-          }
+       <br>    } <br>
           
-          if (Peri1==Peri2&Peri2!=Peri3){ //Isoceles
+        <br>   if (Peri1==Peri2&Peri2!=Peri3){ //Isoceles <br>
             
-               JOptionPane.showMessageDialog(null, "El triangulo es un Isoceles");
+              <br>  JOptionPane.showMessageDialog(null, "El triangulo es un Isoceles"); <br>
               
            
-          }
+        <br>   } <br>
           
-          if (Peri2==Peri3&Peri1!=Peri3){ //Isoceles
+        <br>   if (Peri2==Peri3&Peri1!=Peri3){ //Isoceles <br>
              
-                JOptionPane.showMessageDialog(null, "El triangulo es un Isoceles");
+              <br>   JOptionPane.showMessageDialog(null, "El triangulo es un Isoceles"); <br>
               
               
-          }
+        <br>   } <br>
           
-          if (Peri2==Peri3&Peri1!=Peri2){ //Isoceles
+        <br>   if (Peri2==Peri3&Peri1!=Peri2){ //Isoceles <br>
              
-                JOptionPane.showMessageDialog(null, "El triangulo es un Isoceles");
+            <br>     JOptionPane.showMessageDialog(null, "El triangulo es un Isoceles"); <br>
               
             
-          }
+        <br>   } <br>
           
-          if (Peri1!=Peri3&Peri1!=Peri2){ //Escaleno
+        <br>   if (Peri1!=Peri3&Peri1!=Peri2){ //Escaleno <br>
              
-                JOptionPane.showMessageDialog(null, "El triangulo es un Isoceles");
+          <br>       JOptionPane.showMessageDialog(null, "El triangulo es un Isoceles"); <br>
               
               
             
-          }
-          Res = JOptionPane.showConfirmDialog(null, "Quiere volver a ejecutar el programa");
-        }while (Res == 0);            
+         <br>  } <br>
+         <br>  Res = JOptionPane.showConfirmDialog(null, "Quiere volver a ejecutar el programa"); <br>
+       <br>  }while (Res == 0);   <br>          
             
-        }
+       <br>  } <br>
   
         
-    }
+  <br>   } <br>
     
-
